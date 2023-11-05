@@ -9,7 +9,7 @@ Date: 11/4/23
 <head>
 
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="styles.css">
 	<title>Registration</title>
 	
 </head>
@@ -17,31 +17,32 @@ Date: 11/4/23
 <div id=contain>
 
 	<header>
-		<h1>Advising Appt Registration</h1>
+		<h1>Advising Appointment Registration</h1>
 	</header>
 
-	<h2 class=fh>Contact Information</h2>
-	<form class=forms>
+	<form class=forms method="get" action="thankyou.html">
 		<fieldset>
-			<label for="first">First name:</label>
-			<input type="text" id="first" name="first" required placeholder="First Name">
-			<label for="last">Last name:</label>
-			<input type="text" id="last" name="last" required placeholder="Last Name">
-			<label for="email">Email:</label>
-			<input type="email" id= "email" name="email" required placeholder="YourEmail@example.com">
+			<legend>Contact Information</legend>
+				<label for="first">First name:</label>
+				<input type="text" id="first" name="First_Name" required placeholder="First Name">
+				<label for="last">Last name:</label>
+				<input type="text" id="last" name="Last_Name" required placeholder="Last Name">
+				<label for="email">Email:</label>
+				<input type="email" id= "email" name="email" required placeholder="YourEmail@example.com">
 		</fieldset>
 
-	<h2 class=fh>Reservation Request</h2>
+	
 		<fieldset>
-			<label for="Teacher"></label>
-			<select name="Teach" id="Teacher">
-				<option value="Markley">Kirsten Markley</option>
-				<option value="Ford">Tiffany Ford</option>
-				<option value="Riley">Renee Riley</option>
-			</select>
+			<legend>Reservation Request</legend>
+				<label for="Teacher"></label>
+				<select name="Teacher" id="Teacher">
+					<option value="Kirsten Markley">Kirsten Markley</option>
+					<option value="Tiffany Ford">Tiffany Ford</option>
+					<option value="Renee Riley">Renee Riley</option>
+				</select>
 			
 			<label for="Month"></label>
-			<select name="Time" id="Month">
+			<select name="Month" id="Month">
 				<option value="January">January</option>
 				<option value="February">February</option>
 				<option value="March">March</option>
@@ -59,33 +60,36 @@ Date: 11/4/23
 			<label for="Day"></label>
 			<input type="number" id="Day" name="Day" min="1" max="31">
 			
-			<input type="radio" id="AM" name="tod" value="AM">
+			<input type="radio" id="AM" name="Time_of_Day" value="AM">
 			<label for="AM">AM</label>
-			<input type="radio" id="PM" name="tod" value="PM">
+			<input type="radio" id="PM" name="Time_of_Day" value="PM">
 			<label for="AM">PM</label>
 		</fieldset>
 
 	
-	<h2 class=fh>Classes You Wish To Take Next Semester</h2>
+	
 		<fieldset>
-			<input type="radio" id="Java" name="op1" value="Java">
-			<label for="Java">Java</label>
-			<input type="radio" id="C#" name="op2" value="C#">
-			<label for="C#">C#</label>
-			<input type="radio" id="WebDev" name="op3" value="WebDev">
-			<label for="WebDev">Web Dev</label>
-			<input type="radio" id="Database" name="op4" value="Database">
-			<label for="Database">Database</label>
-			<input type="radio" id="Sad" name="op5" value="Sad">
-			<label for="Sad">System Analysis & Design</label>
+			<legend>Classes You Wish To Take Next Semester</legend>
+				<input type="radio" id="Java" name="Java" value="Java">
+				<label for="Java">Java</label>
+				<input type="radio" id="C#" name="C#" value="C#">
+				<label for="C#">C#</label>
+				<input type="radio" id="WebDev" name="Web Dev" value="WebDev">
+				<label for="WebDev">Web Dev</label>
+				<input type="radio" id="Database" name="Database" value="Database">
+				<label for="Database">Database</label>
+				<input type="radio" id="Sad" name="System_Analysis_&_Design" value="Sad">
+				<label for="Sad">System Analysis & Design</label>
 		</fieldset>
 	
 	
-	<h2 class=fh>Additional Info</h2>
+	
 		<fieldset>
-			<label for="info"></label>
-			<textarea id="info" name="info" rows="6" cols="100" required placeholder="Additional information"></textarea>
+			<legend>Additional Info</legend>
+				<label for="info"></label>
+				<textarea id="info" name="Additional_info" rows="6" cols="100" required placeholder="Additional information"></textarea>
 		</fieldset>
+		<input id=sub type="submit" value="submit">
 	</form>
 
 </div>

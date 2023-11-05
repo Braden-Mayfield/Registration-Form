@@ -16,12 +16,14 @@ html {
 	border: 2px solid #4F7A6A;
 }
 
-.forms {
-
+fieldset {
+	border-color: #4F7A6A;
+	border-style: solid;
+	margin-bottom: 1vmax
 }
 
-.fh {
-	
+#sub {
+	margin-bottom: 1vmax
 }
 
 @media screen and (max-width: 1650px) {
