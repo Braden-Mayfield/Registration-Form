@@ -1,0 +1,55 @@
+/*
+Author: Braden Mayfield
+Date: 11/4/23
+*/
+
+html {
+	background-color: #9FE5E3;
+}
+
+
+#contain {
+	margin-left: 25vmax;
+	margin-right: 25vmax;
+	text-align: center;
+	background-color: #88F5CD;
+	border: 2px solid #4F7A6A;
+}
+
+.forms {
+
+}
+
+.fh {
+	
+}
+
+@media screen and (max-width: 1650px) {
+	#contain {
+	margin-left: 15vmax;
+	margin-right: 15vmax;
+	text-align: center;
+	background-color: #88F5CD;
+	border: 2px solid #4F7A6A;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#contain {
+	margin-left: 5vmax;
+	margin-right: 5vmax;
+	text-align: center;
+	background-color: #88F5CD;
+	border: 2px solid #4F7A6A;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#contain {
+	margin-left: 0vmax;
+	margin-right: 0vmax;
+	text-align: center;
+	background-color: #88F5CD;
+	border: 2px solid #4F7A6A;
+	}
+}
